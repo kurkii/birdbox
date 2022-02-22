@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-func Bird() {
+func Write() {
 	file := os.Args[1]
 	f, err := os.OpenFile(file,
 		os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
