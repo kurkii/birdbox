@@ -16,5 +16,11 @@ func main() {
 		Echo()
 	case "wr":
 		Write()
+	case "bird":
+		Bird()
+	case "wc":
+		WordCount()
+	case "mkdir":
+		Mkdir()
 	}
 }

@@ -5,19 +5,20 @@ import (
 	"os"
 )
 
-func Move() {
-	if len(os.Args) < 3 {
+func Mkdir() {
+
+	if len(os.Args) != 1 {
 		fmt.Println("Invalid Operation!")
-		fmt.Println("Syntax: mv [file] [target]")
+		fmt.Println("Syntax: mkdir 'directory'")
 		os.Exit(1)
 	}
 
 	file := os.Args[1]
-	target := os.Args[2]
 
-	err := os.Rename(file, target)
+	err := os.Mkdir(file, 0755)
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(1)
 	}
+
 }

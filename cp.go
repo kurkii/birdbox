@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"io/ioutil"
-	"log"
 	"os"
 )
 
@@ -19,11 +18,13 @@ func Copy() {
 
 	bytesRead, err := ioutil.ReadFile(file)
 	if err != nil {
-		log.Fatalln(err)
+		fmt.Println(err)
+		os.Exit(1)
 	}
 
 	err = ioutil.WriteFile(target, bytesRead, 0644)
 	if err != nil {
-		log.Fatalln(err)
+		fmt.Println(err)
+		os.Exit(1)
 	}
 }
