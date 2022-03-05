@@ -25,7 +25,7 @@ func WordCount() {
 		fmt.Println(count((strings.Join(os.Args[1:], " "))))
 	default:
 		fmt.Println("Invalid operation!")
-		fmt.Println("Syntax: wc '-w, -b, -n' 'message'")
+		fmt.Println("Syntax: wc '-w' 'message'")
 		os.Exit(1)
 	}
 

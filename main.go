@@ -22,5 +22,13 @@ func main() {
 		WordCount()
 	case "mkdir":
 		Mkdir()
+	case "cr":
+		Create()
+	case "ls":
+		List()
+	case "rm":
+		Remove()
+	case "exit":
+		Remove()
 	}
 }
