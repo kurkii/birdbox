@@ -8,7 +8,7 @@ import (
 
 func Create() {
 
-	if len(os.Args) != 1 {
+	if len(os.Args) > 1 {
 		fmt.Println("Invalid Operation!")
 		fmt.Println("Syntax: cr 'file'")
 		os.Exit(1)

@@ -8,7 +8,7 @@ import (
 
 func List() {
 
-	if len(os.Args) == 0 {
+	if len(os.Args) == 1 {
 		mydir, err := os.Getwd()
 		if err != nil {
 			fmt.Println(err)

@@ -29,8 +29,6 @@ func main() {
 	case "rm":
 		Remove()
 	case "exit":
-		Exit()
-	case "csh":
-		Coolsh()
+		Remove()
 	}
 }
