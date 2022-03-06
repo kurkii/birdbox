@@ -9,7 +9,7 @@ func Mkdir() {
 
 	if len(os.Args) != 2 {
 		fmt.Println("Invalid Operation!")
-		fmt.Println("Syntax: mkdir 'directory'")
+		fmt.Println("Syntax: mkdir [directory]")
 		os.Exit(1)
 	}
 

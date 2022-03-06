@@ -7,7 +7,7 @@ import (
 )
 
 func Copy() {
-	if len(os.Args) < 3 {
+	if len(os.Args) != 3 {
 		fmt.Println("Invalid Operation!")
 		fmt.Println("Syntax: cp [file] [target]")
 		os.Exit(1)

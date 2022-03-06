@@ -8,6 +8,12 @@ import (
 
 func List() {
 
+	if len(os.Args) > 2 {
+		fmt.Println("Invalid Operation!")
+		fmt.Println("Syntax: ls [directory]")
+		os.Exit(1)
+	}
+
 	if len(os.Args) == 1 {
 		mydir, err := os.Getwd()
 		if err != nil {

@@ -6,7 +6,7 @@ import (
 )
 
 func Move() {
-	if len(os.Args) < 3 {
+	if len(os.Args) != 3 {
 		fmt.Println("Invalid Operation!")
 		fmt.Println("Syntax: mv [file] [target]")
 		os.Exit(1)

@@ -30,5 +30,7 @@ func main() {
 		Remove()
 	case "exit":
 		Remove()
+	case "csh":
+		Coolsh()
 	}
 }
